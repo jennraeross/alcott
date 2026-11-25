@@ -5,6 +5,8 @@ edition = "2021"
 license = "MIT"
 description = "Speed-focused local markdown writing app (TUI + CLI)"
 authors = ["Alcott Contributors"]
+repository = "https://github.com/jennraeross/alcott"
+keywords = ["markdown", "tui", "writing", "notes", "cli"]
 
 [profile.release]
 lto = true

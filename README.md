@@ -12,6 +12,7 @@ database. Uses your terminal's own colors and theme — no custom colors.
 ## Usage
 
 ```sh
+cargo install alcott          # install from crates.io
 alcott                          # TUI
 alcott new "Title" -g Writing/"Book 1"
 alcott list [--group Writing]
