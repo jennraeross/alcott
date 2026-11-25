@@ -1,0 +1,18 @@
+# cargo-deny config — keep Alcott MIT-compatible
+[advisories]
+db-path = "~/.cargo/advisory-db"
+db-urls = ["https://github.com/rustsec/advisory-db"]
+
+[licenses]
+unrated = "deny"
+allow = ["MIT", "Apache-2.0", "ISC", "BSD-3-Clause", "Unlicense"]
+confidence-threshold = 0.8
+
+[[licenses.clarify]]
+name = "ring"
+expression = "MIT AND ISC AND OpenSSL"
+license-files = [{ path = "LICENSE", hash = 0xbd0eed23 }]
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
